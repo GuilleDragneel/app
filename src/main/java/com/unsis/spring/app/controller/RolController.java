@@ -74,9 +74,9 @@ public class RolController {
              
              currentrRol.setName(rol.getName());
              
-             Rol res = rolService.save(rol);
+			 Rol updatedRol = rolService.save(currentrRol);
              
-             return new ResponseEntity<Object>(res,HttpStatus.OK);
+             return new ResponseEntity<Object>(updatedRol,HttpStatus.OK);
          } 
          catch (Exception e) {
              map.put("message", e.getMessage());
