@@ -1,6 +1,6 @@
 package com.unsis.spring.app.entity;
 
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+//import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
@@ -94,7 +94,8 @@ public class Cuenta implements Serializable{
 
     public void setContrasena(String contrasena) {
         // Cifrar la contraseña usando BCrypt
-        this.contrasena = new BCryptPasswordEncoder().encode(contrasena);
+        //this.contrasena = new BCryptPasswordEncoder().encode(contrasena);
+        this.contrasena = contrasena;
     }
 
     public Rol getRol() {

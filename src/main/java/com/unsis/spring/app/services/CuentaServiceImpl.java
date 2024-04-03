@@ -3,14 +3,17 @@ package com.unsis.spring.app.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.unsis.spring.app.entity.Cuenta;
 import com.unsis.spring.app.repository.CuentaDao;
 
 import jakarta.transaction.Transactional;
 
+@Service
 public class CuentaServiceImpl implements CuentaService{
- @Autowired
+ 
+	@Autowired
 	private CuentaDao cuentaDao;
 	
 	@Override
