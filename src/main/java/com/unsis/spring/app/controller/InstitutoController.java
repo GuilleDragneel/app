@@ -20,7 +20,7 @@ import com.unsis.spring.app.entity.Instituto;
 import com.unsis.spring.app.services.InstitutoService;
 
 @RestController
-@RequestMapping("/api/v2")
+@RequestMapping("/api/v1")
 public class InstitutoController {
     
     @Autowired
